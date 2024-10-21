@@ -1,7 +1,3 @@
-# EMV_Verify
-
-# README.md for `for_data.ipynb`
-
 ## Overview
 
 This repository contains a Mathematica notebook (`for_data.ipynb`) that solves the perturbation equation in the context of Einstein-Maxwell-Vector (EMV) black hole models. Specifically, it performs symbolic computations, transforms equations into their more standard forms (such as hypergeometric functions), and visualizes the results.
