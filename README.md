@@ -15,7 +15,6 @@ The notebook also includes a comparison between the solutions and those describe
 
 **Note**: This project relies on Wolfram Mathematica, or a Wolfram Engine is required for the execution of the code.
 
-
 ---
 
 ## Prerequisites
