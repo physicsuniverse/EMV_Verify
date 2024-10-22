@@ -4,10 +4,10 @@ This repository contains a Mathematica notebook (`for_data.ipynb`) that solves t
 
 Key aspects include:
 
-- Analytical and numerical solutions derived for the perturbation equation.
+- Analytical solutions derived for the perturbation equation.
 - Transformations into different coordinate systems (such as Boyer-Lindquist and isotropic coordinates).
-- Numerical root-finding to determine parameters governing the solutions.
-- Visualizations of solutions such as the electromagnetic mode as a function of `z`.
+- Specific boundary conditions to determine the upper boundary of the existence domain for the EMV model.
+- Visualizations of numerical solutions.
 
 This repository accompanies the paper *"Spontaneous Vectorization in the Einstein-Maxwell-Vector Model"* on arXiv available at [arxiv:2410.xxxxx](https://arxiv.org/abs/2410.xxxxx).
 
@@ -93,33 +93,12 @@ For additional configuration, refer to the official [Wolfram Jupyter documentati
 - **Useful Functions**:  
   This block evaluates a set of utility functions (`org`, `org2` etc.) to simplify symbolic expressions. These utilize assumptions about parameters such as `r`, `M`, `Q`, `x`, and `q`, which relate to black hole definitions.
   
-- **Solving the Perturbation Equation**:  
-  Includes symbolic transformations and simplifications of Einstein-Maxwell-Vector model perturbation equations. Key steps involve converting equations into their hypergeometric form and solving for specific boundary conditions.
-
-- **Coordinate Transformations**:  
-  The notebook transforms the perturbation equation into Boyer-Lindquist and isotropic coordinates, providing analytical solutions for both systems.
-
+- **Solving the Perturbation Equation and Compare**:  
+  Includes symbolic transformations and simplifications of Einstein-Maxwell-Vector model perturbation equations. The key step is to transform the perturbation equation through a change of coordinates to obtain the standard hypergeometric equation, thereby achieving an analytical solution to the perturbation equation. This section also demonstrates that the perturbation equation in the Boyer-Lindquist coordinate system can be transformed into the isotropic coordinate system's perturbation equation through a coordinate change, and both can be converted into a consistent standard hypergeometric equation through their respective transformations. Finally, it compares the shapes of the solutions to the perturbation equations in the two coordinate systems and the phenomenon of multiple branch solutions.
+- **The upper boundary of the domain of existence  in the $(q-\alpha )$ space**:
+  The perturbative analytical solution obtained in the previous chapter is used to impose asymptotically flat boundary conditions at infinity, yielding the required parameters. For a given $ \alpha  $, there are multiple $ q $ (dimensionless charges) values that satisfy our boundary conditions, with the smallest $q$  being the nodal-free solution primarily discussed in our article. By continuously varying the value of $ \alpha  $, a perfect boundary line for the domain of existence of the EMV model can be determined.
 - **Numerical Solutions and Plots**:  
-  The notebook uses the solutions derived to numerically determine roots and boundary values. Additionally, plots of the solutions such as `Bt(z)` and various boundary functions, are made to visualize the solutions.
-
-In certain sections, comprehensive derivations are provided related to the equations and models pulled from literature, particularly related to the domain of existence of vector regular black holes. For more details on the boundary of `q - α` space explored numerically, you can reference the equation derivations included.
-
----
-
-## Results
-
-The solutions produced through symbolic manipulation and numerical root-finding can be visualized in several forms, including comparisons between the perturbation equation in Boyer-Lindquist coordinates and isotropic coordinates.
-
-Notably:
-
-- **Boundary Conditions**:  
-  Numerical solutions satisfying boundary conditions for electromagnetic perturbation modes ($ Bt(z) $) and hypergeometric constraint verifications.
-  
-- **Plots**:  
-  Solutions for specific values of the parameters ($α = 10, q = {0.83759, 0.976911}$) are plotted across $ z $, visualizing the behavior of the perturbation function.
-
-- **Domain of Existence**:  
-  The notebook numerically solves and plots the upper boundary of the domain of existence in the $(q-\alpha)$ space by solving the transcendental hypergeometric equation derived.
+  This notebook provides a visualization of a set of numerical solutions $B_t(z), h(z)$ with the same parameter $ a=10 $ but different charges $ Q $. These numerical solutions are obtained using the numerical strategy described in the [article](https://doi.org/10.1103/PhysRevD.103.044004), facilitating validation by the reader.
 
 ---
 
@@ -127,7 +106,7 @@ Notably:
 
 Some of the results in this notebook were computed to verify or extend existing research in the black hole physics literature. Certain findings challenge or provide refinements on previously published results such as those found in:
 
-> Oliveira:2020dru
+> [Spontaneous vectorization of electrically charged black holes](https://doi.org/10.1103/PhysRevD.103.044004)
 
 You may also refer to this GitHub repository for a comprehensive derivation of the domain of existence for nodeless vector-regular black holes.
 
