@@ -9,7 +9,7 @@ Key aspects include:
 - Specific boundary conditions to determine the upper boundary of the existence domain for the EMV model.
 - Visualizations of numerical solutions.
 
-This repository accompanies the paper *"Spontaneous Vectorization in the Einstein-Maxwell-Vector Model"* on arXiv available at [arxiv:2410.xxxxx](https://arxiv.org/abs/2410.xxxxx).
+This repository accompanies the paper *"Spontaneous Vectorization in the Einstein-Maxwell-Vector Model"* on arXiv available at [arXiv:2410.16920](https://arxiv.org/abs/2410.16920).
 
 The notebook also includes a comparison between the solutions and those described in existing research papers.
 
@@ -101,7 +101,7 @@ For additional configuration, refer to the official [Wolfram Jupyter documentati
 
 ---
 
-## Citation and Further Reading
+## Further Reading
 
 Some of the results in this notebook were computed to verify or extend existing research in the black hole physics literature. Certain findings challenge or provide refinements on previously published results such as those found in:
 
@@ -122,6 +122,10 @@ This repository is a work-in-progress. If you wish to contribute:
 3. Submit a pull request for review.
 
 ---
+
+## Citation  
+
+**Guang-Zai Ye**, **Chong-Ye Chen**, **GuoYang Fu**, **Chao Niu**, **Cheng-Yong Zhang**, **Peng Liu** (2024). *Spontaneous Vectorization in the Einstein-Maxwell-Vector Model*. [arXiv:2410.16920](https://arxiv.org/abs/2410.16920) [gr-qc]. 
 
 ## License
 
